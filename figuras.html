@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="datocurioso.css">
+      <link rel="stylesheet" href="custionario.css">
+       <link rel="stylesheet" href="figuras.css">
+
+</head>
+
+<body>
+    <img src="pinkpanter.png" alt="Pink Panter" align="dawnload" width="100" height="100">
+<a href="index.html" class="boton-regreso">
+    🏠
+</a>
+
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p>Ingresa las medidas para calcular el área de cada figura</p>
+    </header>
+
+    <main class="contenedor">
+           <!-- Triángulo equilátero -->
+        <section class="figura">
+            <h2><span class="simbolo">△</span> Triángulo Equilátero</h2>
+
+            <form>
+                <label for="lado-triangulo">Lado:</label>
+                <input type="number" id="lado-triangulo" placeholder="Ingresa el lado">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+    
+          
+            <!-- Cuadrado -->
+        <section class="figura">
+            <h2><span class="simbolo">□</span>Cuadrado</h2>
+
+            <form>
+                <label for="lado-cuadrado">Lado:</label>
+                <input type="number" id="lado-cuadrado" placeholder="Ingresa el lado">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+         <!-- Rectángulo -->
+        <section class="figura">
+            <h2><span class="simbolo">▭</span> Rectángulo</h2>
+
+            <form>
+                <label for="base-rectangulo">Base:</label>
+                <input type="number" id="base-rectangulo" placeholder="Ingresa la base">
+
+                <label for="altura-rectangulo">Altura:</label>
+                <input type="number" id="altura-rectangulo" placeholder="Ingresa la altura">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+
+         <!-- Rombo -->
+        <section class="figura">
+            <h2><span class="simbolo">◇</span> Rombo</h2>
+
+            <form>
+                <label for="diagonal-mayor">Diagonal mayor:</label>
+                <input type="number" id="diagonal-mayor" placeholder="Diagonal mayor">
+
+                <label for="diagonal-menor">Diagonal menor:</label>
+                <input type="number" id="diagonal-menor" placeholder="Diagonal menor">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+
+         <!-- Trapecio -->
+        <section class="figura">
+            <h2><span class="simbolo">⏢</span> Trapecio</h2>
+
+            <form>
+                <label for="base-mayor">Base mayor:</label>
+                <input type="number" id="base-mayor" placeholder="Base mayor">
+
+                <label for="base-menor">Base menor:</label>
+                <input type="number" id="base-menor" placeholder="Base menor">
+
+                <label for="altura-trapecio">Altura:</label>
+                <input type="number" id="altura-trapecio" placeholder="Altura">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+<!-- Pentágono -->
+        <section class="figura">
+            <h2><span class="simbolo">⬠</span> Pentágono</h2>
+
+            <form>
+                <label for="perimetro-pentagono">Perímetro:</label>
+                <input type="number" id="perimetro-pentagono" placeholder="Perímetro">
+
+                <label for="apotema-pentagono">Apotema:</label>
+                <input type="number" id="apotema-pentagono" placeholder="Apotema">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+         <!-- Romboide -->
+        <section class="figura">
+            <h2><span class="simbolo">▱</span> Romboide</h2>
+
+            <form>
+                <label for="base-romboide">Base:</label>
+                <input type="number" id="base-romboide" placeholder="Ingresa la base">
+
+                <label for="altura-romboide">Altura:</label>
+                <input type="number" id="altura-romboide" placeholder="Ingresa la altura">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+
+         <!-- Hexágono -->
+        <section class="figura">
+            <h2><span class="simbolo">⬡</span> Hexágono</h2>
+
+            <form>
+                <label for="perimetro-hexagono">Perímetro:</label>
+                <input type="number" id="perimetro-hexagono" placeholder="Perímetro">
+
+                <label for="apotema-hexagono">Apotema:</label>
+                <input type="number" id="apotema-hexagono" placeholder="Apotema">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+
+          <!-- Círculo -->
+        <section class="figura">
+            <h2><span class="simbolo">○</span> Círculo</h2>
+
+            <form>
+                <label for="radio-circulo">Radio:</label>
+                <input type="number" id="radio-circulo" placeholder="Ingresa el radio">
+
+                <button type="button">Calcular Área</button>
+
+                <p class="resultado">Área: <span>0</span></p>
+            </form>
+        </section>
+
+    </main>
+
+     <footer>
+        <p>Calculadora de Figuras Geométricas © 2026</p>
+    </footer>
+
+    <script src="figuras.js"></script>
+</body>
+
+</html>

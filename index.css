@@ -1,0 +1,111 @@
+
+.inicio {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+
+/* BIENVENIDA */
+
+.bienvenida {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bienvenida h2 {
+    font-size: 32px;
+    color: #d90087;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    font-size: 18px;
+}
+
+
+/* MENÚ */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* BOTONES */
+
+.boton {
+    width: 220px;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ff1493,
+        #d90087
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 4px solid #111;
+    border-radius: 20px;
+
+    font-size: 50px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s ease;
+}
+
+
+/* TEXTO DE LOS BOTONES */
+
+.boton span {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.boton:hover {
+    transform: translateY(-10px) scale(1.05);
+
+    background: linear-gradient(
+        135deg,
+        #ff69b4,
+        #c71585
+    );
+
+    box-shadow:
+        0 15px 30px rgba(255, 20, 147, 0.5);
+}
+
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        width: 260px;
+        height: 150px;
+    }
+
+}

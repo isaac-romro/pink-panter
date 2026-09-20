@@ -1,0 +1,310 @@
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+   ========================================= */
+
+* {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f7a8d8, #fce4f3);
+    color: #222;
+    border: 5px solid #111;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+header {
+    background: linear-gradient(135deg, #ff1493, #c71585, #111);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 15px;
+    border: 3px solid #111;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: "Courier New", Courier, monospace;
+    text-shadow: 3px 3px 0 #000;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   ========================================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+
+/* =========================================
+   TARJETAS
+   ========================================= */
+
+.figura {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid #111;
+    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.figura:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 20, 147, 0.55);
+}
+
+
+/* =========================================
+   TÍTULOS
+   ========================================= */
+
+.figura h2 {
+    text-align: center;
+    color: #e60087;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    color: #ff1493;
+}
+
+h2 {
+    text-align: center;
+    color: #e60087;
+}
+
+
+/* =========================================
+   SÍMBOLO / ICONO
+   ========================================= */
+
+.simbolo {
+    font-size: 55px;
+    color: #ff1493;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0 #111;
+}
+
+
+/* =========================================
+   FORMULARIOS
+   ========================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    font-family: "Courier New", Courier, monospace;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff1493;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.4);
+}
+
+
+/* =========================================
+   CAJAS
+   ========================================= */
+
+.caja-curva {
+    background-color: #f8b6dc;
+    border-radius: 15px;
+    border: 2px solid #111;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.caja-texto {
+    background-color: #eea2ca;
+    border-radius: 15px;
+    border: 2px solid #111;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.sombra {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #111;
+    box-shadow: 0 8px 20px rgba(255, 0, 162, 0.5);
+    margin: 10px auto;
+}
+
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #d90087;
+    color: white;
+    border: 2px solid #111;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.5);
+}
+
+
+/* =========================================
+   RESULTADO
+   ========================================= */
+
+.resultado {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ffe1f2;
+    border: 2px solid #ff1493;
+    border-radius: 8px;
+    color: #b0006f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resultado span {
+    color: #111;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    background: #111;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid #ff1493;
+}
+
+
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .caja-curva,
+    .caja-texto,
+    .sombra {
+        width: 100%;
+    }
+}
+}
+
+
+.boton-regreso {
+    display: inline-block;
+
+    margin: 20px;
+    padding: 12px 20px;
+
+    background-color: #d90087;
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid #111;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.boton-regreso:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.5);
+}
